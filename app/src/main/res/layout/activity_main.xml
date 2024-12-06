@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navi_app"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Box for input fields -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inputCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="8dp"
+        android:padding="2dp"
+        android:background="@android:color/white">
+
+        <!-- LinearLayout for the input fields arranged vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Date Field: TextView and EditText horizontally aligned -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <!-- Camera Focal Length Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/focal_length"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etFocalLength"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:hint="@string/enter_focal_length_in_mm"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Sensor Height Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sensor_height"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etSensorHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:hint="@string/enter_sensor_height_in_pixel"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Sensor Width Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sensor_width"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etSensorWidth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/enter_sensor_width_in_pixel"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <!-- Easting Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EastingCo-ordinate"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etEasting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Easting in meters"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Northing Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NorthingCo-ordinate"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/etNorthing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Northing in meters"
+                    android:background="@drawable/box_input"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons: Save and Start side by side -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/inputCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp" />
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textSize="20sp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

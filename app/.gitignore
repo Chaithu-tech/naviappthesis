@@ -1,0 +1,5 @@
+/build
+build.gradle.kts
+.idea
+*.gradle
+DS_Store

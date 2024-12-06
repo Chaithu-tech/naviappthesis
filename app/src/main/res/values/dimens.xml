@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="camera_height">40dp</dimen>
+    <dimen name="focal_length">0.035dp</dimen>
+    <dimen name="sensor_height">0.024dp</dimen>
+    <dimen name="coverage_percentage">0.60dp</dimen>
+    <dimen name="padding">10dp</dimen>
+</resources>

@@ -1,0 +1,38 @@
+.
+├── app
+│   └── src
+│       ├── androidTest
+│       │   └── java
+│       │       └── com
+│       │           └── example
+│       │               └── navi_app_thesis
+│       ├── main
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── example
+│       │   │           └── navi_app_thesis
+│       │   │               ├── service
+│       │   │               ├── ui
+│       │   │               └── view
+│       │   └── res
+│       │       ├── color
+│       │       ├── drawable
+│       │       ├── layout
+│       │       ├── mipmap-anydpi
+│       │       ├── mipmap-hdpi
+│       │       ├── mipmap-mdpi
+│       │       ├── mipmap-xhdpi
+│       │       ├── mipmap-xxhdpi
+│       │       ├── mipmap-xxxhdpi
+│       │       ├── values
+│       │       ├── values-night
+│       │       └── xml
+│       └── test
+│           └── java
+│               └── com
+│                   └── example
+│                       └── navi_app_thesis
+└── gradle
+    └── wrapper
+
+36 directories

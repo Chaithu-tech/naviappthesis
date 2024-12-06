@@ -1,0 +1,4 @@
+<resources>
+    <integer name="image_width">1920</integer>
+    <integer name="image_height">1080</integer>
+</resources>
