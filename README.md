@@ -1,4 +1,4 @@
-# Navigation App
+# Navi_App
 
 ## Prerequisites
 - **Android Studio** (for development)
