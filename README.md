@@ -1,7 +1,9 @@
 # Navi_App
+## Overview
+The Navi App is an Android-based application designed to streamline photogrammetry and navigation workflows. It dynamically calculates ground coverage, manages image overlap, and provides real-time navigation feedback for use cases such as aerial mapping, surveying, and mission planning. The application uses a Model-View-Controller (MVC) architecture for modularity and maintainability.
 
 ## Prerequisites
-- **Android Studio** (for development)
+- **Android Studio** 
 - **Java** 
 - Android **10+** (for secure data saving)
 - Basic understanding of **Android Development** and **UTM Coordinates**
